@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>Canvas Line Rectangle with COlors</title>
+</head>
+<body>
+ 
+<canvas id="myCanvas"width="400"height="300"style="border:1px solid black;"></canvas>
+
+<script>
+var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+
+ ctx.beginPath();
+ ctx.strokeStyle="red";
+ ctx.moveTo(50,50);
+ ctx.lineTo(200,50);
+ ctx.stroke();
+
+ ctx.beginPath();
+ ctx.fillStyle="yellow";
+ ctx.rect(100,100,150,80);
+ ctx.fill();
+ ctx.stroke();
+</script>
+
+</body>
+</html>
