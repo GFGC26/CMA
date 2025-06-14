@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>image hover effect</title>
+        <style>
+            .image-container{
+                width:100%;
+                height:100%;
+                position:absolute;
+                transition:opacity 0.5s ease;
+
+            }
+            .image-container img:first-child{
+                opacity:1;
+            }
+            .image-container img:last-child{
+                opacity:0;
+            }
+            .image-container:hover img:first-child{
+                opacity:1;
+            }
+            .image-container:hover img:last-child{
+                opacity:1;
+            }
+            </style>
+            </head>
+            <body>
+                <div class="image-contanier">
+                    <img src="image (1).png"alt="image 1">
+                    <img src="jpg2.jpg"alt="image 2">
+                </div>
+            </body>
+            </html>

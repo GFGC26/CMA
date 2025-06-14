@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Display Day and Time</title>
+</head>
+<body>
+
+<h2>Current Day and Time</h2>
+
+<p id="output"></p>
+
+<script>
+var today=new Date( );
+
+var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+var day=days[today.getDay( )];
+
+var hours=today.getHours( );
+
+var minutes=today.getMinutes( );
+
+var seconds=today.getSeconds( );
+
+var result="Today is:"+day+"<br>Current Time is:"+hours+":"+minutes+":"+seconds;
+
+document.getElementById("output").innerHTML = result;
+</script>
+
+</body>
+</html>
+

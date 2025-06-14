@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>display day and time</title>
+</head>
+<body>
+    <h2>current day and time</h2>
+    <p id="output"></p>
+    <script>
+         var today=new Date();
+         var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+         var day=days[today.getDay()];
+         var hours=today.getHours();
+         var minutes=toady.getMinutes();
+         var seconds=today.getSeconds();
+         var result="Today is:"+day+"<br>Current time is:"+hours+":"+minutes+":"+seconds;
+         document.getElementById("output").innerHTML=result;
+    </script>
+</body>
+</html> 
